@@ -1,0 +1,15 @@
+
+#assignment1
+
+select distinct 
+w.utm_content,
+w.utm_campaign,
+w.http_referer,
+count(distinct w.website_session_id) as sessions 
+from website_sessions w
+where w.created_at<'2012-04-12'
+group by 1,2,3
+order by count(distinct w.website_session_id) desc
+;
+
+#The top content, campaign, and referer is g_ad_1, nonbrand, www.gsearch.com
