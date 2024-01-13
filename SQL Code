@@ -14,10 +14,3 @@ order by count(distinct w.website_session_id) desc
 
 #The top content, campaign, and referer is g_ad_1, nonbrand, www.gsearch.com
 
-utm_content	utm_campaign	http_referer	sessions
-g_ad_1	nonbrand	https://www.gsearch.com	3613
-null	null	null	28
-null	null	https://www.gsearch.com	27
-g_ad_2	brand	https://www.gsearch.com	26
-null	null	https://www.bsearch.com	7
-b_ad_2	brand	https://www.bsearch.com	7
